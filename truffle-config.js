@@ -70,7 +70,7 @@ module.exports = {
       skipDryRun: true
     },
     mainnet: {
-      provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'http://ethereum-rpc.trustwalletapp.com'),
+      provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'https://ethereum-rpc.trustwalletapp.com'),
       network_id: 1,
       gas: 6000000,
       gasPrice: utils.toWei('2', 'gwei'),
